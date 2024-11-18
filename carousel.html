@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Auto rotate carousel</title>
+</head>
+<body>
+  <section class="slideshow-container" aria-roledescription="carousel" aria-label="carousel title goes here">
+    <div id="slideshow" aria-live="off" >
+      <div class="mySlides fade" role="slide" >
+        <img src="/image1.jpg" alt="Description of Image 1" tabindex="0">
+      </div>
+      <div class="mySlides fade" role="slide">
+        <img src="/image2.jpg" alt="Description of Image 2" role="link" tabindex="0">
+      </div>
+      <div class="mySlides fade" role="slide">
+        <img src="/image3.jpg" alt="Description of Image 3" role="link"  tabindex="0">
+      </div>
+  
+      
+    </div>
+    <div class="controls">
+      <button id="playPauseButton" class="play-pause-button" aria-pressed="true" aria-label="start auto play" role="button">
+        <i id="playPauseIcon" class="fas fa-pause" aria-hidden="true"></i>
+      </button>
+      <button class="nav-button left" id="prevButton" aria-label="Previous Slide" onclick="prevSlide()">❮</button>
+      <button class="nav-button right" id="nextButton" aria-label="Next Slide" onclick="nextSlide()">❯</button>
+    </div>
+
+    <!-- Visual Dots Track -->
+    <!-- <div style="text-align:center" id="dotContainer">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div> -->
+  </section>
+  
+    <script src="carousel.js"></script>
+</body>
+</html>
